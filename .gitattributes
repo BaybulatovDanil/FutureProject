@@ -1,0 +1,38 @@
+# Заставляем Git не менять line ending без явного на то указания.
+*			-text
+# General
+.gitattributes		text eol=native
+.gitignore			text eol=native
+.tgitconfig			text eol=native
+# Text
+*.md				text eol=native
+*.gradle			text eol=native
+*.java				text eol=native
+*.properties		text eol=native
+*.xml				text eol=native
+*.yml				text eol=native
+*.bat				text eol=native
+*.sh				text eol=lf
+*.sql				text eol=lf
+*.cpp				text eol=native
+*.h					text eol=native
+*.cs				text eol=native
+*.mat				text eol=native
+*.ini				text eol=native
+*.meta          	text eol=native
+*.prefab			text eol=native
+*.unity				text eol=native
+*.json				text eol=native
+*.jbp				text eol=native
+*.anim				text eol=native
+*.py            	text eol=native
+*.cubemap         	text eol=native
+*.txt           	text eol=native
+*.controller		text eol=native
+*.vfx				text eol=native
+*.terrainlayer		text eol=native
+*.playable			text eol=native
+*.wfpproj           text eol=native
+*.lighting          text eol=native
+*.mask              text eol=native
+_empty          	text eol=native

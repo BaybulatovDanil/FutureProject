@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5616556279210970266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247200bfc45929f41a4b5286135d5029, type: 3}
+  m_Name: OuterCorner
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: e49e408c-f277-42eb-9cc9-8f1ec494f232
+  _pluginPrefab: {fileID: 3991710587044776184, guid: c8cf354d28c53ab4d9f6146327ae4b09, type: 2}
+  _preview:
+    _prefabAsset: {fileID: 4749699466336430949, guid: ced15ab49a9312145b5f2f4e23afe173, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _uiSelected: 0
+  _used: 1
+  _spawnChance: 1
+--- !u!114 &-5002299512724786405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247200bfc45929f41a4b5286135d5029, type: 3}
+  m_Name: barracks_wall_medium_01
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 738f6578-fcfe-4cf3-acfd-a19b3325e3d1
+  _pluginPrefab: {fileID: -5567503630540440734, guid: c8cf354d28c53ab4d9f6146327ae4b09, type: 2}
+  _preview:
+    _prefabAsset: {fileID: 4288234375849703542, guid: 3a8f1e5e6b16bf8459ecfd9cfd104cb8, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _uiSelected: 0
+  _used: 1
+  _spawnChance: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8eb84aa7564a314baba325992456a32, type: 3}
+  m_Name: Default
+  m_EditorClassIdentifier: 
+  _profileName: Default
+  _examplePrefab: {fileID: 5386741042628459892, guid: 84f8652c6676c3d498645f41d6b9e424, type: 3}
+  _ep_InnerCorner: {fileID: 6093522716325696082, guid: 84f8652c6676c3d498645f41d6b9e424, type: 3}
+  _ep_OuterCorner: {fileID: 1895460277178541180, guid: 84f8652c6676c3d498645f41d6b9e424, type: 3}
+  _ep_MidStraight: {fileID: 475847134002271279, guid: 84f8652c6676c3d498645f41d6b9e424, type: 3}
+  _ep_FirstStraight: {fileID: 3585903873996335295, guid: 84f8652c6676c3d498645f41d6b9e424, type: 3}
+  _ep_LastStraight: {fileID: 6257964177481047985, guid: 84f8652c6676c3d498645f41d6b9e424, type: 3}
+  _ep_PillarInnerCornerBegin: {fileID: 0}
+  _ep_PillarInnerCornerEnd: {fileID: 0}
+  _ep_PillarOuterCornerBegin: {fileID: 0}
+  _ep_PillarOuterCornerEnd: {fileID: 0}
+  _ep_PillarInnerCornerMiddle: {fileID: 0}
+  _ep_PillarOuterCornerMiddle: {fileID: 0}
+  _wallProperties:
+    upAxis: 1
+    forwardAxis: 2
+    invertForwardAxis: 0
+    innerAxis: 0
+    invertInnerAxis: 0
+    height: 4.054455
+    forwardSize: 8
+  _truncateForwardSize: 0
+  _spawnPillars: 0
+  _pillarProfileName: Default
+  _innerCornerRT:
+    position: {x: -3.5355349, y: -2.0272274, z: 0.7101874}
+    rotation: {x: 0, y: 0.38268346, z: 0, w: -0.9238796}
+  _outerCornerRT:
+    position: {x: 3.5355337, y: -2.0272274, z: 6.367042}
+    rotation: {x: 0, y: 0.38268346, z: -0, w: 0.92387956}
+  _straightRT:
+    position: {x: 0.0043566823, y: -2.0272274, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  _pillarMidStraightBeginRT:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+  _pillarMidStraightEndRT:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+  _pillarInnerCornerBeginRT:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+  _pillarInnerCornerEndRT:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+  _pillarOuterCornerBeginRT:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+  _pillarOuterCornerEndRT:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+  _pillarInnerCornerMiddleRT:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+  _pillarOuterCornerMiddleRT:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+  _straight_ForwardPushDistance_Inner: 4.0043564
+  _straight_InnerPushDistance_Inner: 4.004357
+  _straight_ForwardPushDistance_Outer: 3.9956436
+  _straight_InnerPushDistance_Outer: 3.9956434
+  _straightWallPrefabs:
+  - {fileID: -5002299512724786405}
+  _innerCornerPrefabs:
+  - {fileID: 7543674002973759595}
+  _outerCornerPrefabs:
+  - {fileID: -5616556279210970266}
+--- !u!114 &7543674002973759595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247200bfc45929f41a4b5286135d5029, type: 3}
+  m_Name: InnerCorner
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 0829087e-8e23-473b-bada-a85cd1ac0a0d
+  _pluginPrefab: {fileID: 6203531884215344738, guid: c8cf354d28c53ab4d9f6146327ae4b09, type: 2}
+  _preview:
+    _prefabAsset: {fileID: 7361180408438360925, guid: b2af45fc6f51fc740929672567d0638e, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _uiSelected: 0
+  _used: 1
+  _spawnChance: 1
