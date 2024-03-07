@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6984934167539525369}
   - component: {fileID: 3992290965044818297}
+  - component: {fileID: 6690481979985692394}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -55,6 +56,18 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &6690481979985692394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4910409840927915208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11e81e9b5c7ced34c81891e777b28bbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6012399490186904875
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111,6 +124,18 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 227617ad1f4a7f346ba285aefc941d63, type: 2}
+    - target: {fileID: 5866666021909216657, guid: d8a0e710db16ff64496f143432f553f8, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: d8a0e710db16ff64496f143432f553f8, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9c8bbd817523f19448d1384ee609b9be, type: 2}
+    - target: {fileID: 5866666021909216657, guid: d8a0e710db16ff64496f143432f553f8, type: 3}
+      propertyPath: m_WarningMessage
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6952581982351725339, guid: d8a0e710db16ff64496f143432f553f8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -122,46 +147,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d8a0e710db16ff64496f143432f553f8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3990341332460902883}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a0e710db16ff64496f143432f553f8, type: 3}
 --- !u!4 &6123466155134411456 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d8a0e710db16ff64496f143432f553f8, type: 3}
   m_PrefabInstance: {fileID: 6012399490186904875}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6895359208818587770 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d8a0e710db16ff64496f143432f553f8, type: 3}
-  m_PrefabInstance: {fileID: 6012399490186904875}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &3990341332460902883
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6895359208818587770}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: d8a0e710db16ff64496f143432f553f8, type: 3}
-  m_Controller: {fileID: 9100000, guid: 97ab38f0ea448b345b3efc96783310f7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
-    are already bound by a Humanoid avatar. These transforms can only be changed
-    by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
-    'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
-    'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
-    'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform
-    'mixamorig:RightArm'\n\tand more ...\n\tFrom animation clip 'mixamo.com'\n\tFrom
-    animation clip 'mixamo.com'\n\tFrom animation clip 'mixamo.com'"
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
