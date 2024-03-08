@@ -1149,13 +1149,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637610703}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.10036743, y: -0.88609976, z: 0.391263, w: 0.2273036}
+  m_LocalRotation: {x: 0.096846975, y: -0.8883373, z: 0.39134052, w: 0.21984124}
   m_LocalPosition: {x: 56.02765, y: 64.732475, z: 92.92073}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 47.55, y: -152.2, z: 0}
 --- !u!114 &637610707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1168,7 +1168,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43a80a0814f98ae4f969a3fbb76f2d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camOffset: {x: 4.1, y: 14, z: -2.96}
+  target: {fileID: 685678207}
+  distance: 7
+  camOffset: {x: 1.82, y: 8.55, z: 4.9}
+  minDistance: 1
+  maxDistance: 7
+  smoothSpeed: 2
+  scrollSensitivity: 1
 --- !u!1001 &681744383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1250,6 +1256,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5186d0765e8789045a8de1951070c7df, type: 3}
   m_PrefabInstance: {fileID: 681744383}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &685678207 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6984934167539525369, guid: 10c1a109e6ab6bf4995476e80a6456a6, type: 3}
+  m_PrefabInstance: {fileID: 7866322709966450510}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &709882814
 PrefabInstance:
@@ -3761,6 +3772,14 @@ PrefabInstance:
     - target: {fileID: 4910409840927915208, guid: 10c1a109e6ab6bf4995476e80a6456a6, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6690481979985692394, guid: 10c1a109e6ab6bf4995476e80a6456a6, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6690481979985692394, guid: 10c1a109e6ab6bf4995476e80a6456a6, type: 3}
+      propertyPath: rotateSpeed
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6984934167539525369, guid: 10c1a109e6ab6bf4995476e80a6456a6, type: 3}
       propertyPath: m_LocalPosition.x
