@@ -106,15 +106,15 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 3
     agentTypeID: 0
-    agentRadius: 0.5
-    agentHeight: 2.5
-    agentSlope: 35
+    agentRadius: 0.3
+    agentHeight: 3
+    agentSlope: 40
     agentClimb: 1
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.1
     manualTileSize: 0
     tileSize: 256
     buildHeightMesh: 0
@@ -1051,7 +1051,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 63c21b04a667f7541bc91e876288ed2f, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 127
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3608,6 +3608,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 475d72c52c0f16840aa2def60c02d643, type: 3}
       propertyPath: m_Name
       value: Human_RIG
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 475d72c52c0f16840aa2def60c02d643, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
