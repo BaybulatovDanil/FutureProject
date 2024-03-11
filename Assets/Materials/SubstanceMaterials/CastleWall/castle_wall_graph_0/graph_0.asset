@@ -161,7 +161,7 @@ MonoBehaviour:
   HasThumbnail: 1
   CurrentStatePreset: " <sbspreset pkgurl=\"pkg://Castle_Wall\" label=\"\" >\n  <presetinput
     identifier=\"$outputsize\" uid=\"104276422\" type=\"8\" value=\"10,10\" />\n 
-    <presetinput identifier=\"x_amount\" uid=\"1802072287\" type=\"4\" value=\"15\"
+    <presetinput identifier=\"x_amount\" uid=\"1802072287\" type=\"4\" value=\"12\"
     />\n  <presetinput identifier=\"stone_block_x_random\" uid=\"1803110377\" type=\"0\"
     value=\"0.606\" />\n  <presetinput identifier=\"y_amount\" uid=\"1802070862\"
     type=\"4\" value=\"18\" />\n  <presetinput identifier=\"stone_block_y_random\"
@@ -171,7 +171,7 @@ MonoBehaviour:
     uid=\"1803269377\" type=\"4\" value=\"25\" />\n  <presetinput identifier=\"mortarheight\"
     uid=\"1802191931\" type=\"0\" value=\"0.286\" />\n  <presetinput identifier=\"mortardamageintensity\"
     uid=\"1802304826\" type=\"0\" value=\"0.687\" />\n  <presetinput identifier=\"mossintensity\"
-    uid=\"1802242916\" type=\"0\" value=\"0.596\" />\n  <presetinput identifier=\"wetnessintensity\"
+    uid=\"1802242916\" type=\"0\" value=\"0.518\" />\n  <presetinput identifier=\"wetnessintensity\"
     uid=\"1802398317\" type=\"0\" value=\"0.57\" />\n  <presetinput identifier=\"wetnessspread\"
     uid=\"1802479193\" type=\"0\" value=\"0.667\" />\n </sbspreset>\n"
   IsRuntimeOnly: 0
@@ -181,7 +181,7 @@ MonoBehaviour:
   DefaultPreset: " <sbspreset pkgurl=\"pkg://Castle_Wall\" label=\"\" >\n  <presetinput
     identifier=\"$outputsize\" uid=\"104276422\" type=\"8\" value=\"10,10\" />\n
     </sbspreset>\n"
-  MaterialShader: Standard
+  MaterialShader: Universal Render Pipeline/Lit
   RenderTextures: 0
   OutputRemaped: 0
   Presets:
@@ -254,7 +254,7 @@ MonoBehaviour:
           GuiDescription: 
           Type: 4
           WidgetType: 1
-        Data: 15
+        Data: 12
         NumericalDescription:
           DefaultValue: 8
           MinValue: 1
@@ -801,7 +801,7 @@ MonoBehaviour:
           GuiDescription: 
           Type: 0
           WidgetType: 1
-        Data: 0.596
+        Data: 0.518
         NumericalDescription:
           DefaultValue: 0.55
           MinValue: 0
