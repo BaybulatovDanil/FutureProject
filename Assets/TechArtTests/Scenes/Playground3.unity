@@ -460,6 +460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {fileID: -3552364970006637457, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
   dotPosition: {fileID: 1499772638}
+  rootmotionScript: {fileID: 976622299}
   testTexture: {fileID: 2800000, guid: b7c7657b615f03e4997db0fbec9e586f, type: 3}
   ren: {fileID: 1508620159}
 --- !u!1 &874605735
@@ -745,10 +746,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SK_Mannequin
       objectReference: {fileID: 0}
-    - target: {fileID: 6123735726568941927, guid: c9da68eece17b904ca37ca00dd14c705, type: 3}
-      propertyPath: angleSpeed
-      value: 0.01
-      objectReference: {fileID: 0}
     - target: {fileID: 6620356536293264128, guid: c9da68eece17b904ca37ca00dd14c705, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -807,6 +804,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e087ecce43ebbff45a1b360637807d93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &976622299 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6123735726568941927, guid: c9da68eece17b904ca37ca00dd14c705, type: 3}
+  m_PrefabInstance: {fileID: 975517841}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e60f73f64e6e48242ba3ffd26146a13a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1028513131
@@ -1145,9 +1153,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439\u0442\u0435 <color=red>\u043A\u043E\u043D\u0442\u0440\u043E\u043B\u043B\u0435\u0440</color>\n\u0421\u0433\u043B\u0430\u0436\u0438\u0432\u0430\u043D\u0438\u0435
-    \u043F\u043E\u0434 \u0438\u043D\u043F\u0443\u0442 \u0441 \u043A\u043B\u0430\u0432\u043E\u043C\u044B\u0448\u0438\n\u043F\u043E\u043A\u0430
-    \u043D\u0435 \u043F\u0440\u0438\u043A\u0440\u0443\u0447\u0435\u043D\u043E"
+  m_Text: 
 --- !u!222 &1334429607
 CanvasRenderer:
   m_ObjectHideFlags: 0

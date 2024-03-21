@@ -18,20 +18,19 @@ public class InputsScript : MonoBehaviour
     Vector2 dir;
     float magnitude;
 
+    [SerializeField]
+    RootmotionMovement rootmotionScript;
+    bool hasRootmotionScript = false;
+
 [SerializeField]
     private Texture2D testTexture;
     [SerializeField]
-    //private Material mat;
     private Image ren;
 
 
-    /*[SerializeField]
-    private RenderTexture rt;*/
-
-    //private RectTransform dotPosition;
-
     void Awake()
     {
+        hasRootmotionScript = rootmotionScript != null;
         maxRadius = dotPosition.transform.parent.gameObject.GetComponent<RectTransform>().sizeDelta.x / dotPosition.sizeDelta.x * (dotPosition.sizeDelta.x * 0.5f);
         for(int i = 0; i < trailBuffer.Length; i++)
         {
@@ -39,26 +38,27 @@ public class InputsScript : MonoBehaviour
         }
         testTexture = new Texture2D(256, 256, TextureFormat.RGBA32, false);
         ren.material.mainTexture = testTexture;
-        //mat.SetTexture("_MainTex", testTexture);
     }
 
     void Update()
     {
-        inputVector = movement.action.ReadValue<Vector2>();
-        dir = inputVector.normalized;
-        magnitude = Mathf.Min(inputVector.magnitude, 1f) * maxRadius;
-        //inputVector = Vector2.Min(inputVector, inputVector.normalized);
-        dotPosition.anchoredPosition = dir * magnitude;
-        //var f = rt.colorBuffer;
-        UpdateTexture();
-        /*for (int i = 0; i < trailBuffer.Length; i++)
+        if (hasRootmotionScript)
         {
-            testTexture.SetPixel(i % 256, i / 256, Color.green);
-        }*/
-        //testTexture.SetPixelData(trailBuffer, 0);
+            inputVector = rootmotionScript.Direction;
+            dir = inputVector.normalized;
+            magnitude = Mathf.Min(rootmotionScript.Speed, 1f) * maxRadius;
+        }
+        else
+        {
+            inputVector = movement.action.ReadValue<Vector2>();
+            dir = inputVector.normalized;
+            magnitude = Mathf.Min(inputVector.magnitude, 1f) * maxRadius;
+        }
+        dotPosition.anchoredPosition = dir * magnitude;
+        UpdateTexture();
+
         testTexture.SetPixels(trailBuffer, 0);
         testTexture.Apply(true, false);
-        //mat.SetTexture("_MainTex", testTexture);
     }
 
     private void UpdateTexture()
@@ -70,18 +70,9 @@ public class InputsScript : MonoBehaviour
             Vector2 pos = new Vector2(i % 256, i / 256);
             Vector2 dotPos = (dir * magnitude) * 2.56f + new Vector2(128f, 128f);
             bool condition2 = Vector2.Distance(pos, dotPos) < 10f;
-            //Debug.Log($"pos:[{pos}], dotPos:[{dotPos}]");
 
             float alpha = condition2 ? 1f : (trailBuffer[i].a) * 0.995f;
-            //trailBuffer[i].a = ((t==(i%256)) || (t == ((i+1) % 256)) || (t == ((i-1) % 256))) ? 1f: (trailBuffer[i].a + 1f) / 2f;
             trailBuffer[i].a = alpha;
-
-            //trailBuffer[i] = new Color(trailBuffer[i].r, trailBuffer[i].g, trailBuffer[i].b, alpha);
-            /*if(((t == (i % 256)) || (t == ((i + 1) % 256)) || (t == ((i - 1) % 256))))
-            {
-                Debug.Log($"i%256:[{i % 256}], Mathf.CeilToInt(Time.realtimeSinceStartup%256f): [{Mathf.CeilToInt(Time.realtimeSinceStartup % 256f)}]");
-            }*/
-            //Debug.Log($"i%256:[{i % 256}], Mathf.CeilToInt(Time.realtimeSinceStartup%256f): [{Mathf.CeilToInt(Time.realtimeSinceStartup % 256f)}]");
         }
     }
 }
