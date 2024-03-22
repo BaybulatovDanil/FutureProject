@@ -1,0 +1,187 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: demon_indoor_rich_floor_02_brown_opaque_d
+  m_Shader: {fileID: 4800000, guid: fa42abba43233de4bac551c9b440ab0b, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - PBD_NONE
+  - _DOUBLESIDED_ON
+  - _MASKSMAP
+  - _NORMALMAP
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - DistortionVectors
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AdditionalAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 355631449fe05d24dbec5c9ff2c39d4d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: f1a87b960ea009844b06ba7ca5f5ce9b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissolveMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissolveNoiseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 355631449fe05d24dbec5c9ff2c39d4d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MasksMap:
+        m_Texture: {fileID: 2800000, guid: d3e48efc5da203541b6663575d031420, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PosVatMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RotVatMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AdditionalAlbedoAlphaScale: 1
+    - _AdditionalAlbedoColorClamp: 1
+    - _AdditionalAlbedoColorScale: 1
+    - _AdditionalAlbedoEnabled: 0
+    - _AdditionalAlbedoFactor: 0
+    - _AlphaCutoff: 0.5
+    - _Alphatest: 0
+    - _BaseBottomOffset: 5
+    - _BaseColorBlending: 0
+    - _Blend: 0
+    - _BumpScale: 1
+    - _CullMode: 0
+    - _Cutoff: 0.5
+    - _Dissolve: 0
+    - _DissolveColorScale: 1
+    - _DissolveCutout: 1
+    - _DissolveEmission: 1
+    - _DissolveEnabled: 0
+    - _DissolveNoiseScale: 1
+    - _DissolveWidth: 0.1
+    - _Distortion: 1
+    - _DistortionColorFactor: 0.5
+    - _DistortionDoesNotUseAlpha: 1
+    - _DistortionEnabled: 0
+    - _DistortionThicknessScale: 1
+    - _DoubleSided: 1
+    - _DoubleSidedNormalMode: 1
+    - _DstBlend: 0
+    - _Emission: 0
+    - _EmissionAlbedoSuppression: 0
+    - _EmissionColorFactor: 0
+    - _EmissionColorScale: 1
+    - _EmissionColorScaleMeta: 1
+    - _EmissionMapUsage: 0
+    - _EnvironmentReflections: 1
+    - _Glossiness: 0.5
+    - _GpuSkinning: 0
+    - _GroundColorPower: 1
+    - _IndirectIstancing: 0
+    - _LightmapEmissionFlags: 0
+    - _Metallic: 1
+    - _OccludedObjectClip: 0
+    - _PbdMode: 0
+    - _QueueControl: -1
+    - _QueueOffset: 0
+    - _ReceiveDecals: 1
+    - _ReceiveShadows: 1
+    - _RimLighting: 0
+    - _RimPower: 1
+    - _Roughness: 1
+    - _SpecialPostprocessFlag: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _StencilRef: 1
+    - _Surface: 0
+    - _Thickness: 1
+    - _TintNoiseTile: 10
+    - _TopContrast: 1
+    - _TopIntensity: 1
+    - _TopOffset: 0.5
+    - _Translucent: 0
+    - _TransmissionShadow: 0.5
+    - _TransmissionStrenght: 2
+    - _UseGroundColor: 0
+    - _VaEdgeFlutter: 0
+    - _VaPrimaryFactor: 0
+    - _VaSecondaryFactor: 0
+    - _VatCurrentFrame: 0
+    - _VatEnabled: 0
+    - _VatLerp: 0
+    - _VatNumOfFrames: 0
+    - _VatPivMax: 0
+    - _VatPivMin: 0
+    - _VatPosMax: 0
+    - _VatPosMin: 0
+    - _VatType: 0
+    - _VertexAnimationEnabled: 0
+    - _WindAmplitude: 1
+    - _WindGrassStiffness: 1
+    - _WindScale: 10
+    - _WindSpeed: 5
+    - _WrapDiffuseFactor: 0
+    - _ZTest: 3
+    - _ZWrite: 1
+    m_Colors:
+    - _AdditionalAlbedoColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseBottomColor: {r: 1, g: 1, b: 1, a: 0}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DissolveColor: {r: 1, g: 1, b: 1, a: 1}
+    - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TintColor1: {r: 1, g: 1, b: 1, a: 0}
+    - _TintColor2: {r: 1, g: 1, b: 1, a: 0}
+    - _TopColor: {r: 1, g: 1, b: 1, a: 0}
+    - _TranslucencyColor: {r: 1, g: 1, b: 1, a: 1}
+    - _VaFrequencies: {r: 1.975, g: 0.793, b: 0.375, a: 0.193}
+  m_BuildTextureStacks: []
