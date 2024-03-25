@@ -20,6 +20,8 @@ public class InputsScript : MonoBehaviour
 
     [SerializeField]
     RootmotionMovement rootmotionScript;
+    [SerializeField]
+    RootmotionMovementTopdown rootmotionScriptTopdown;
     bool hasRootmotionScript = false;
 
 [SerializeField]
@@ -30,7 +32,7 @@ public class InputsScript : MonoBehaviour
 
     void Awake()
     {
-        hasRootmotionScript = rootmotionScript != null;
+        hasRootmotionScript = (rootmotionScript != null) || (rootmotionScriptTopdown != null);
         maxRadius = dotPosition.transform.parent.gameObject.GetComponent<RectTransform>().sizeDelta.x / dotPosition.sizeDelta.x * (dotPosition.sizeDelta.x * 0.5f);
         for(int i = 0; i < trailBuffer.Length; i++)
         {
@@ -44,9 +46,18 @@ public class InputsScript : MonoBehaviour
     {
         if (hasRootmotionScript)
         {
-            inputVector = rootmotionScript.Direction;
-            dir = inputVector.normalized;
-            magnitude = Mathf.Min(rootmotionScript.Speed, 1f) * maxRadius;
+            if(rootmotionScript != null)
+            {
+                inputVector = rootmotionScript.Direction;
+                dir = inputVector.normalized;
+                magnitude = Mathf.Min(rootmotionScript.Speed, 1f) * maxRadius;
+            }
+            else
+            {
+                inputVector = rootmotionScriptTopdown.Direction;
+                dir = inputVector.normalized;
+                magnitude = Mathf.Min(rootmotionScriptTopdown.Speed, 1f) * maxRadius;
+            }
         }
         else
         {
