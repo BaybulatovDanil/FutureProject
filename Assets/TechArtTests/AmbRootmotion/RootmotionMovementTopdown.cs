@@ -11,6 +11,8 @@ public class RootmotionMovementTopdown : MonoBehaviour
     [SerializeField]
     private InputActionReference lookDirection;
     [SerializeField]
+    private InputActionReference forceWalkButton;
+    [SerializeField]
     private float angleSpeed = 0.01f;
     [SerializeField]
     private float movementDelta = 3f;
@@ -18,6 +20,8 @@ public class RootmotionMovementTopdown : MonoBehaviour
     private Transform cameraTransform;
 
     bool hasCamera = false;
+
+    float speedCap => forceWalkButton.action.IsPressed() ? 0.49f : 1f;
 
     Vector2 inputVector = Vector2.zero;
     Vector2 lastInputVector = Vector2.zero;
@@ -97,7 +101,7 @@ public class RootmotionMovementTopdown : MonoBehaviour
         var rawMovementInput = movement.action.ReadValue<Vector2>();
         inputVector = Vector2.MoveTowards(lastInputVector, rawMovementInput, movementDelta * Time.deltaTime);
 
-        magnitude = Mathf.Min(rawMovementInput.magnitude, 1f);
+        magnitude = Mathf.Min(rawMovementInput.magnitude, speedCap);
 
         /*lookVector = lookDirection.action.ReadValue<Vector2>();
         lastLookAngle = Mathf.SmoothStep(lastLookAngle, Vector2.Dot(lookVector,Vector2.right), 0.5f);
