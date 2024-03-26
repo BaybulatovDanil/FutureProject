@@ -69,6 +69,8 @@ public class RootmotionMovementTopdown : MonoBehaviour
         //rotate180R = false;
         animator.ResetTrigger("TurnLeft180");
         animator.ResetTrigger("TurnRight180");
+        animator.ResetTrigger("TurnRunLeft180");
+        animator.ResetTrigger("TurnRunRight180");
     }
 
     public void EndTurn()
@@ -115,26 +117,41 @@ public class RootmotionMovementTopdown : MonoBehaviour
 #endif
 
 
-        lastSpeed = magnitude;
-        animator.SetFloat("Speed", magnitude);
+        /*lastSpeed = magnitude;
+        animator.SetFloat("Speed", magnitude);*/
+        lastSpeed = Mathf.SmoothStep(lastSpeed, magnitude, 0.95f);
+        animator.SetFloat("Speed", lastSpeed);
 
-        lastAngle = Vector2.SignedAngle(Vector2.Lerp(lastDirection, dir, 0.1f), Vector2.up) / 180f;
+        lastAngle = Vector2.SignedAngle(Vector2.Lerp(lastDirection, dir, /*0.1f*/0.3f), Vector2.up) / 180f;
         animator.SetFloat("Angle", lastAngle);
 
         var lookAngleDotRight = Vector3.Dot(transform.right, this.transform.TransformDirection(angleB));
         var lookInput = (lookAngleDotDiff < rot180Degrees) ? 0f : lookAngleDotRight;
-        if ((lookAngleDotDiff < rot180Degrees)/* && !isTurning*/)
+        if ((lookAngleDotDiff < rot180Degrees) && !isTurning)
         {
             isTurning = true;
+            shouldResetAnimBools = true;
             if (lookAngleDotRight < 0f)
             {
-                animator.SetTrigger("TurnLeft180");
-                shouldResetAnimBools = true;
+                if (lastSpeed > 0.5f)
+                {
+                    animator.SetTrigger("TurnRunLeft180");
+                }
+                else
+                {
+                    animator.SetTrigger("TurnLeft180");
+                }
             }
             else
             {
-                animator.SetTrigger("TurnRight180");
-                shouldResetAnimBools = true;
+                if (lastSpeed > 0.5f)
+                {
+                    animator.SetTrigger("TurnRunRight180");
+                }
+                else
+                {
+                    animator.SetTrigger("TurnRight180");
+                }
             }
         }
         else

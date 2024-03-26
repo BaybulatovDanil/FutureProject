@@ -1813,9 +1813,10 @@ MonoBehaviour:
   movement: {fileID: -3552364970006637457, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
   lookDirection: {fileID: -3787169064211337688, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
   angleSpeed: 0.01
-  movementDelta: 3
+  movementDelta: 7
   cameraTransform: {fileID: 0}
   animator: {fileID: 936774995165565306}
+  isTurning: 0
 --- !u!143 &319587022708244561
 CharacterController:
   m_ObjectHideFlags: 0

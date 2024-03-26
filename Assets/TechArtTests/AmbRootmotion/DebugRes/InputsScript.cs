@@ -77,7 +77,7 @@ public class InputsScript : MonoBehaviour
         var t = Mathf.CeilToInt((Time.realtimeSinceStartup * 50) % 256f);
         for (int i = 0; i < trailBuffer.Length; i++)
         {
-            bool condition = ((t == (i % 256)) || (t == ((i + 1) % 256)) || (t == ((i - 1) % 256)) || (t == ((i + 2) % 256)) || (t == ((i - 2) % 256)));
+            //bool condition = ((t == (i % 256)) || (t == ((i + 1) % 256)) || (t == ((i - 1) % 256)) || (t == ((i + 2) % 256)) || (t == ((i - 2) % 256)));
             Vector2 pos = new Vector2(i % 256, i / 256);
             Vector2 dotPos = (dir * magnitude) * 2.56f + new Vector2(128f, 128f);
             bool condition2 = Vector2.Distance(pos, dotPos) < 10f;
