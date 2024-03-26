@@ -94,9 +94,10 @@ public class RootmotionMovementTopdown : MonoBehaviour
     {
         if (shouldResetAnimBools) ResetAnimBools();
 
-        inputVector = Vector2.MoveTowards(lastInputVector, movement.action.ReadValue<Vector2>(), movementDelta * Time.deltaTime);
+        var rawMovementInput = movement.action.ReadValue<Vector2>();
+        inputVector = Vector2.MoveTowards(lastInputVector, rawMovementInput, movementDelta * Time.deltaTime);
 
-        magnitude = Mathf.Min(inputVector.magnitude, 1f);
+        magnitude = Mathf.Min(rawMovementInput.magnitude, 1f);
 
         /*lookVector = lookDirection.action.ReadValue<Vector2>();
         lastLookAngle = Mathf.SmoothStep(lastLookAngle, Vector2.Dot(lookVector,Vector2.right), 0.5f);
@@ -119,7 +120,7 @@ public class RootmotionMovementTopdown : MonoBehaviour
 
         /*lastSpeed = magnitude;
         animator.SetFloat("Speed", magnitude);*/
-        lastSpeed = Mathf.SmoothStep(lastSpeed, magnitude, 0.95f);
+        lastSpeed = Mathf.SmoothStep(lastSpeed, magnitude, 0.2f);
         animator.SetFloat("Speed", lastSpeed);
 
         lastAngle = Vector2.SignedAngle(Vector2.Lerp(lastDirection, dir, /*0.1f*/0.3f), Vector2.up) / 180f;
